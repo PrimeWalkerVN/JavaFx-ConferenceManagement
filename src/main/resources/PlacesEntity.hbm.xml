@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="javafx.entities.PlacesEntity" table="Places" schema="Conference_Management">
+        <id name="placeId">
+            <column name="PlaceID" sql-type="int(11)"/>
+        </id>
+        <property name="name">
+            <column name="Name" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="address">
+            <column name="Address" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="capacity">
+            <column name="Capacity" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

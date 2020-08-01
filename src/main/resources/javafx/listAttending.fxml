@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-border-color: black;">
+         <children>
+            <Text layoutX="203.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conference Detail" textAlignment="CENTER" wrappingWidth="293.7294921875">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="157.0" layoutY="41.0" />
+            <Text layoutX="203.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Attending" textAlignment="CENTER" wrappingWidth="293.7294921875">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="14.0" layoutY="15.0" onAction="#backAction" style="-fx-background-color: #303240;" text="Back" textFill="WHITE" />
+            <Text layoutX="554.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registed:" textAlignment="CENTER" wrappingWidth="90.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="ammountId" layoutX="656.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="40.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="90.0" prefHeight="610.0" prefWidth="700.0">
+         <children>
+            <TableView fx:id="usersTable" layoutX="14.0" layoutY="14.0" prefHeight="550.0" prefWidth="680.0" stylesheets="@../style/tableview.css">
+              <columns>
+                <TableColumn fx:id="userIdCol" prefWidth="64.0" text="User ID" />
+                <TableColumn fx:id="userNameCol" minWidth="0.0" prefWidth="150.0" text="User Name" />
+                  <TableColumn fx:id="fullNameCol" prefWidth="152.0" text="Full Name" />
+                  <TableColumn fx:id="timeResCol" prefWidth="190.0" text="TimeRegisted" />
+                  <TableColumn fx:id="statusCol" prefWidth="121.0" text="Status" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

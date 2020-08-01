@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.Main2Controller">
+    <children>
+        <AnchorPane prefHeight="150.0" prefWidth="700.0" style="-fx-border-color: black;">
+            <children>
+                <Text layoutX="203.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Screen" textAlignment="CENTER" wrappingWidth="293.7294921875">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Text>
+                <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="195.0" layoutY="40.0" />
+                <TextField fx:id="searchField" layoutX="210.0" layoutY="99.0" prefHeight="26.0" prefWidth="246.0" />
+                <Text layoutX="411.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+                <FontIcon iconLiteral="fa-search" iconSize="20" layoutX="472.0" layoutY="119.0" />
+                <Text layoutX="654.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View" />
+                <FontIcon iconLiteral="mdi-view-list" iconSize="30" layoutX="655.0" layoutY="123.0" />
+                <ComboBox fx:id="viewDropDown" layoutX="550.0" layoutY="98.0" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutY="150.0" prefHeight="550.0" prefWidth="700.0">
+         <children>
+            <ListView fx:id="confList" layoutX="25.0" prefHeight="550.0" prefWidth="650.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

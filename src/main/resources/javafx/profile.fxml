@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.ProfileController">
+   <children>
+      <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-border-color: black;">
+         <children>
+            <Text layoutX="203.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile" textAlignment="CENTER" wrappingWidth="293.7294921875">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="241.0" layoutY="41.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="90.0" prefHeight="610.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Text layoutX="114.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME:" wrappingWidth="141.203125">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="saveInfoButton" layoutX="525.0" layoutY="352.0" onAction="#saveInfoAction" prefHeight="42.0" prefWidth="141.0" style="-fx-background-color: #303240;" text="Save information" textFill="WHITE" />
+            <FontIcon iconLiteral="fa-vcard-o" iconSize="30" layoutX="49.0" layoutY="102.0" />
+            <Text layoutX="114.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL:" wrappingWidth="141.203125">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="mdi-email-secure" iconSize="30" layoutX="47.0" layoutY="318.0" />
+            <JFXTextField fx:id="emailField" layoutX="305.0" layoutY="295.0" prefHeight="26.0" prefWidth="308.0" unFocusColor="#1bc1d0" />
+            <JFXButton layoutX="525.0" layoutY="68.0" onAction="#changePwdAction" prefHeight="42.0" prefWidth="141.0" style="-fx-background-color: #303240;" text="Change password" textFill="WHITE" />
+            <Text layoutX="114.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FULLNAME:" wrappingWidth="141.203125">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="fa-user-secret" iconSize="30" layoutX="49.0" layoutY="236.0" />
+            <JFXTextField fx:id="fullNameField" layoutX="305.0" layoutY="212.0" prefHeight="26.0" prefWidth="308.0" unFocusColor="#1bc1d0" />
+            <Text fx:id="userNameField" fill="#1485c6" layoutX="305.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="186.359375">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

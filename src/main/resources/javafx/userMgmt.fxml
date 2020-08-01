@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.UserMgmtController">
+    <children>
+        <AnchorPane prefHeight="150.0" prefWidth="700.0" style="-fx-border-color: black;">
+            <children>
+                <Text layoutX="135.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users Management" textAlignment="CENTER" wrappingWidth="444.7294921875">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Text>
+                <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="94.0" layoutY="40.0" text="" />
+                <TextField fx:id="searchField" layoutX="257.0" layoutY="98.0" prefHeight="26.0" prefWidth="280.0" />
+                <Text layoutX="493.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+                <FontIcon iconLiteral="fa-search" iconSize="20" layoutX="539.0" layoutY="118.0" />
+                <ComboBox fx:id="comboFilter" layoutX="570.0" layoutY="95.0" prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="150.0" prefHeight="550.0" prefWidth="700.0">
+            <children>
+                <TableView fx:id="usersTable" prefHeight="550.0" prefWidth="700.0" stylesheets="@../style/tableview.css">
+                    <columns>
+                        <TableColumn fx:id="userIdCol" minWidth="20.0" prefWidth="62.0" text="UserID" />
+                        <TableColumn fx:id="userNameCol" minWidth="50.0" prefWidth="131.0" text="UserName" />
+                        <TableColumn fx:id="fullNameCol" minWidth="100.0" prefWidth="233.0" text="FullName" />
+                        <TableColumn fx:id="emailCol" prefWidth="184.0" text="Email" />
+                        <TableColumn fx:id="statusCol" prefWidth="89.0" text="Status" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

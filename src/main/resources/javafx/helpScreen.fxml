@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-border-color: black;">
+         <children>
+            <Text layoutX="203.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Introduction" textAlignment="CENTER" wrappingWidth="350.0">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="157.0" layoutY="41.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="90.0" prefHeight="610.0" prefWidth="700.0">
+         <children>
+            <VBox layoutX="115.0" layoutY="124.0" prefHeight="200.0" prefWidth="481.0" />
+         </children>
+      </AnchorPane>
+      <VBox alignment="TOP_CENTER" layoutX="29.0" layoutY="134.0" prefHeight="465.0" prefWidth="654.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Software: Conferences Management" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Version: 1.0" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author: Nguyen Chi Thanh - 1712774" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Features:" wrappingWidth="600.0">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Include conferences. Can show detail, show type view, filter,search,...." textAlignment="JUSTIFY" wrappingWidth="550.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login, register account to attend conference" textAlignment="JUSTIFY" wrappingWidth="550.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For user role, can statistic conferences already attended" textAlignment="JUSTIFY" wrappingWidth="550.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For admin role, can management conferences, users, places,...." textAlignment="JUSTIFY" wrappingWidth="550.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="With Management can add, edit, delete conferences, users, places,...." textAlignment="JUSTIFY" wrappingWidth="550.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profile to change information, password,.." textAlignment="JUSTIFY" wrappingWidth="550.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Other: right click in row table to show function if it is avaiable, double click to show detail,.." textAlignment="JUSTIFY" wrappingWidth="550.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

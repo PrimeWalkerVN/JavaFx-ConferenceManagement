@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-border-color: black;">
+            <children>
+                <Text layoutX="203.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Approval Users" textAlignment="CENTER" wrappingWidth="293.7294921875">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Text>
+                <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="157.0" layoutY="41.0" />
+                <Text fx:id="confnameField" layoutX="124.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conference" textAlignment="CENTER" wrappingWidth="451.7294921875">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="90.0" prefHeight="610.0" prefWidth="700.0">
+            <children>
+                <TableView fx:id="usersTable" layoutX="14.0" layoutY="14.0" prefHeight="550.0" prefWidth="680.0">
+                    <columns>
+                        <TableColumn fx:id="userIdCol" prefWidth="64.0" text="User ID" />
+                        <TableColumn fx:id="userNameCol" minWidth="0.0" prefWidth="150.0" text="User Name" />
+                        <TableColumn fx:id="fullNameCol" prefWidth="152.0" text="Full Name" />
+                        <TableColumn fx:id="timeResCol" prefWidth="190.0" text="TimeRegisted" />
+                        <TableColumn fx:id="statusCol" prefWidth="121.0" text="Status" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

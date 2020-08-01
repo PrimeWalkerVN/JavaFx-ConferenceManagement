@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane fx:id="paneCell" prefHeight="170.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <ImageView fx:id="imageCell" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Conference.jpg" />
+         </image>
+      </ImageView>
+      <FontIcon iconLiteral="fa-address-card-o" iconSize="20" layoutX="273.0" layoutY="28.0" />
+      <Text fx:id="idCell" layoutX="322.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="208.84423828125" />
+      <FontIcon iconLiteral="fa-address-book" iconSize="20" layoutX="273.0" layoutY="57.0" />
+      <Text fx:id="confNameCell" layoutX="322.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="228.3525390625" />
+      <FontIcon iconLiteral="mdi-clock" iconSize="20" layoutX="273.0" layoutY="87.0" />
+      <Text fx:id="confStartCell" layoutX="322.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" wrappingWidth="200.0" />
+      <FontIcon iconLiteral="mdi-clock-alert" iconSize="20" layoutX="273.0" layoutY="117.0" />
+      <Text fx:id="confEndCell" layoutX="322.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End" wrappingWidth="184.705078125" />
+      <FontIcon iconLiteral="mdi-format-paint" iconSize="20" layoutX="273.0" layoutY="150.0" />
+      <Text fx:id="confDescCell" layoutX="322.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc" wrappingWidth="236.7294921875" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane fx:id="stackPaneId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.ConfDetailController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-border-color: black;">
+               <children>
+                  <Text layoutX="203.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conference Detail" textAlignment="CENTER" wrappingWidth="293.7294921875">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="157.0" layoutY="41.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="90.0" prefHeight="610.0" prefWidth="700.0">
+               <children>
+                  <ImageView fx:id="imageViewId" fitHeight="220.0" fitWidth="320.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Conference.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="392.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conf ID:" wrappingWidth="63.203125">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="confId" layoutX="496.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="63.203125" />
+                  <Text layoutX="392.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="63.203125">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="confname" layoutX="496.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="180.203125" />
+                  <Text layoutX="393.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting:" wrappingWidth="86.203125">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="26.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detail Description:" wrappingWidth="153.203125">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="confTimeStart" layoutX="497.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="190.0" />
+                  <Text fx:id="placeName" layoutX="497.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="174.203125" />
+                  <Text layoutX="394.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" wrappingWidth="74.203125">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="394.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity:" wrappingWidth="74.203125">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="placeCapacity" layoutX="496.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" wrappingWidth="63.203125" />
+                  <JFXButton fx:id="attendButton" layoutX="461.0" layoutY="492.0" onAction="#attendAction" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: #303240;" text="Attend the conference" textFill="WHITE" />
+                  <Text fx:id="confDetailDesc" layoutX="50.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="asdfjalsjf;skjfksljflksajfksajdf;kljsdkjfskldjflksdjfdaskfjslakfjskafjsad;ljfskdfjskfjskdfj;sjfksajfsjfslajflkasjfkajkdsljfs;kjfksjfksdjfkjsdlfjsdklfj;asjdfskajfdkasjdfkjsadklfjsalkjfsjafljasdfljsdfjsdjskjfsjdflksjadfkljsdafjak" wrappingWidth="623.7294921875" />
+                  <FontIcon iconLiteral="fa-vcard-o" iconSize="20" layoutX="362.0" layoutY="31.0" />
+                  <FontIcon iconLiteral="mdi-map-marker" iconSize="20" layoutX="362.0" layoutY="185.0" />
+                  <FontIcon iconLiteral="mdi-timer" iconSize="20" layoutX="362.0" layoutY="107.0" text="" />
+                  <FontIcon iconLiteral="mdi-account-box" iconSize="20" layoutX="362.0" layoutY="69.0" />
+                  <FontIcon iconLiteral="fa-group" iconSize="20" layoutX="362.0" layoutY="224.0" />
+                  <FontIcon iconLiteral="fa-audio-description" iconSize="30" layoutX="26.0" layoutY="280.0" wrappingWidth="34.0" />
+                  <Text layoutX="393.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ending:" wrappingWidth="86.203125">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="confTimeEnd" layoutX="497.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="190.0" />
+                  <FontIcon iconLiteral="mdi-av-timer" iconSize="20" layoutX="362.0" layoutY="146.0" />
+                  <JFXButton fx:id="listAttendingButotn" layoutX="60.0" layoutY="492.0" onAction="#listAttendingAction" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: #303240;" text="List attending" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

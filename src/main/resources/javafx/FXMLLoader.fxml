@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.FXMLLoaderController">
+    <left>
+        <AnchorPane prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #303240;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="91.0" fitWidth="90.0" layoutX="105.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons/conference.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#fcfcfc" layoutX="44.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONFERENCES MANAGEMENT" textAlignment="CENTER" wrappingWidth="212.0703125">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="labelAccount" fill="WHITE" layoutX="10.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, Account" textAlignment="CENTER" wrappingWidth="280.0">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <JFXButton fx:id="mainScreenButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="210.0" onAction="#mainAction" prefHeight="30.0" prefWidth="279.0" text="Main Screen" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <graphic>
+                        <FontIcon fill="WHITE" iconLiteral="mdi-dolby" iconSize="20" />
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton fx:id="profileButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="260.0" onAction="#profileAction" prefHeight="30.0" prefWidth="279.0" text="Profile" textFill="WHITE" visible="false">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <graphic>
+                        <FontIcon fill="WHITE" iconLiteral="mdi-account-card-details" iconSize="20" />
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton fx:id="confStatisticButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="310.0" onAction="#confStatisticAction" prefHeight="30.0" prefWidth="279.0" text="Conferences Statistic" textFill="WHITE" visible="false">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <graphic>
+                        <FontIcon fill="WHITE" iconLiteral="fa-area-chart" iconSize="20" />
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton fx:id="confMgmtButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="310.0" onAction="#confMgmtAction" prefHeight="30.0" prefWidth="279.0" text="Conferences Management" textFill="WHITE" visible="false">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <graphic>
+                        <FontIcon fill="WHITE" iconLiteral="fa-users" iconSize="20" />
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+                <JFXButton fx:id="userMgmtButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="360.0" onAction="#userMgmtAction" prefHeight="26.0" prefWidth="279.0" text="Users Management" textFill="WHITE" visible="false">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <graphic>
+                        <FontIcon fill="WHITE" iconLiteral="fa-user-circle" iconSize="20" />
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </JFXButton>
+            <JFXButton fx:id="placesMgmtButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="12.0" layoutY="410.0" onAction="#placesMgmtAction" prefHeight="26.0" prefWidth="279.0" text="Places Management" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <FontIcon fill="WHITE" iconLiteral="fa-location-arrow" iconSize="20" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="logoutButton" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="175.0" layoutY="635.0" onAction="#logoutAction" prefHeight="42.0" prefWidth="104.0" text="Logout" textFill="WHITE" visible="false">
+               <graphic>
+                  <FontIcon fill="WHITE" iconLiteral="mdi-logout" iconSize="30" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="loginButton" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="186.0" layoutY="635.0" onAction="#loginButtonAction" prefHeight="42.0" prefWidth="104.0" text="Login" textFill="WHITE">
+               <graphic>
+                  <FontIcon fill="WHITE" iconLiteral="mdi-login-variant" iconSize="30" text="" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Button layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#helpAction" style="-fx-background-color: #303240;">
+               <graphic>
+                  <FontIcon fill="WHITE" iconLiteral="mdi-help-circle" iconSize="30" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            </children></AnchorPane>
+    </left>
+</BorderPane>

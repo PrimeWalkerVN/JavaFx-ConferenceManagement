@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import tornadofx.control.DateTimePicker?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controllers.ConfMgmtController">
+    <children>
+        <AnchorPane prefHeight="150.0" prefWidth="700.0" style="-fx-border-color: black;">
+            <children>
+                <Text layoutX="135.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conferences Management" textAlignment="CENTER" wrappingWidth="444.7294921875">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Text>
+                <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="94.0" layoutY="40.0" text="" />
+                <TextField fx:id="searchField" layoutX="381.0" layoutY="98.0" prefHeight="26.0" prefWidth="156.0" />
+                <Text layoutX="493.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+                <FontIcon iconLiteral="fa-search" iconSize="20" layoutX="538.0" layoutY="118.0" />
+                <Text layoutX="65.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conference Start" />
+                <Text layoutX="248.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conference End" />
+                <DateTimePicker fx:id="startDate" layoutX="12.0" layoutY="99.0" prefHeight="26.0" prefWidth="163.0" />
+                <DateTimePicker fx:id="endDate" layoutX="194.0" layoutY="99.0" prefHeight="26.0" prefWidth="163.0" />
+                <ComboBox fx:id="comboFilter" layoutX="570.0" layoutY="94.0" prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+            <JFXButton layoutX="612.0" layoutY="14.0" onAction="#addNewConfAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #303240;" text="Add New" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="150.0" prefHeight="550.0" prefWidth="700.0">
+            <children>
+                <TableView fx:id="confTable" prefHeight="550.0" prefWidth="700.0" stylesheets="@../style/tableview.css">
+                    <columns>
+                        <TableColumn fx:id="confIdCol" minWidth="20.0" prefWidth="62.0" text="Conf ID" />
+                        <TableColumn fx:id="confNameCol" minWidth="50.0" prefWidth="171.0" text="Conference Name " />
+                        <TableColumn fx:id="confDescCol" minWidth="100.0" prefWidth="202.0" text="Description" />
+                        <TableColumn fx:id="confStartCol" prefWidth="175.0" text="Starting" />
+                        <TableColumn fx:id="confCapCol" prefWidth="89.0" text="Capacity" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

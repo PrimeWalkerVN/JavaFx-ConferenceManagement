@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import tornadofx.control.DateTimePicker?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.AddConf">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Text layoutX="200.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new conference" textAlignment="CENTER" wrappingWidth="327.7294921875">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <FontIcon fill="#248bc3" iconLiteral="eli-hand-right" iconSize="30" layoutX="140.0" layoutY="50.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="100.0" prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <ImageView fx:id="imageViewId" fitHeight="230.0" fitWidth="230.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Conference.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="302.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="mdi-account-box" iconSize="25" layoutX="272.0" layoutY="41.0" />
+            <TextField fx:id="confNameField" layoutX="434.0" layoutY="20.0" prefHeight="30.0" prefWidth="245.0" />
+            <Text layoutX="302.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting:" wrappingWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="mdi-timer" iconSize="25" layoutX="272.0" layoutY="106.0" />
+            <DateTimePicker fx:id="startingPicker" layoutX="433.0" layoutY="84.0" prefHeight="30.0" prefWidth="245.0" />
+            <Text layoutX="302.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ending:" wrappingWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="mdi-av-timer" iconSize="25" layoutX="272.0" layoutY="167.0" />
+            <DateTimePicker fx:id="endingPicker" layoutX="433.0" layoutY="145.0" prefHeight="30.0" prefWidth="245.0" />
+            <JFXButton layoutX="68.0" layoutY="205.0" onAction="#chooseImageAction" prefHeight="26.0" prefWidth="123.0" style="-fx-border-color: black;" text="Choose image" />
+            <Text layoutX="302.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="mdi-map-marker" iconSize="25" layoutX="272.0" layoutY="226.0" />
+            <ComboBox fx:id="placeComboBox" layoutX="433.0" layoutY="204.0" prefWidth="245.0" style="-fx-background-color: white; -fx-border-color: #bcb3b3;" />
+            <Text layoutX="44.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Short Description" wrappingWidth="200.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="mdi-map-marker" iconSize="25" layoutX="14.0" layoutY="296.0" />
+            <Text layoutX="45.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detail Description:" wrappingWidth="200.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <FontIcon iconLiteral="mdi-map-marker" iconSize="25" layoutX="15.0" layoutY="355.0" />
+            <TextArea fx:id="detailDescField" layoutX="252.0" layoutY="333.0" prefHeight="163.0" prefWidth="412.0" />
+            <TextField fx:id="shortDescField" layoutX="252.0" layoutY="275.0" prefHeight="26.0" prefWidth="412.0" />
+            <JFXButton layoutX="257.0" layoutY="522.0" onAction="#addConfAction" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: #303240;" text="Add this conference" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
